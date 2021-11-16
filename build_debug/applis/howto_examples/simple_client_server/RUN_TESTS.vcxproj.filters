@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\dev\openfec\openfec_v1.4.2\build_debug\CMakeFiles\f6e9503a4818a20a0c661c7c60f39d0e\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{30F76D2A-33F2-33BC-B572-E89A62287414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

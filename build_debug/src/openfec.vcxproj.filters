@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_advanced\ldpc_from_file\of_ldpc_ff_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_hamming_weight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_matrix_convert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_matrix_dense.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_matrix_sparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\it_decoding\of_it_decoding.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\ml_decoding\of_ml_decoding.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\ml_decoding\of_ml_tool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\of_create_pchk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\of_symbol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_openfec_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_rand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\statistics\of_statistics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\2d_parity_matrix\of_2d_parity_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\ldpc_staircase\of_ldpc_staircase_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\ldpc_staircase\of_ldpc_staircase_pchk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_8\of_reed-solomon_gf_2_8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_8\of_reed-solomon_gf_2_8_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\galois_field_codes_utils\algebra_2_4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\galois_field_codes_utils\algebra_2_8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\galois_field_codes_utils\of_galois_field_code.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\of_reed-solomon_gf_2_m_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_advanced\ldpc_from_file\of_codec_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_advanced\ldpc_from_file\of_ldpc_ff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_advanced\ldpc_from_file\of_ldpc_ff_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_advanced\ldpc_from_file\of_ldpc_ff_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_advanced\ldpc_from_file\of_ldpc_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_hamming_weight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_matrix_convert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_matrix_dense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_matrix_sparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\binary_matrix\of_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\it_decoding\of_it_decoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\ml_decoding\of_ml_decoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\ml_decoding\of_ml_tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\of_create_pchk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\of_linear_binary_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\of_symbol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_cb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_openfec_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_openfec_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\of_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\statistics\of_statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\2d_parity_matrix\of_2d_parity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\2d_parity_matrix\of_2d_parity_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\2d_parity_matrix\of_2d_parity_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\2d_parity_matrix\of_codec_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\ldpc_staircase\of_codec_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\ldpc_staircase\of_ldpc_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\ldpc_staircase\of_ldpc_staircase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\ldpc_staircase\of_ldpc_staircase_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_8\of_codec_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_8\of_reed-solomon_gf_2_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_8\of_reed-solomon_gf_2_8_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_8\of_reed-solomon_gf_2_8_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\galois_field_codes_utils\algebra_2_4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\galois_field_codes_utils\algebra_2_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\galois_field_codes_utils\of_galois_field_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\of_codec_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\of_reed-solomon_gf_2_m.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\of_reed-solomon_gf_2_m_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\dev\openfec\openfec_v1.4.2\src\lib_stable\reed-solomon_gf_2_m\of_reed-solomon_gf_2_m_includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\dev\openfec\openfec_v1.4.2\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\dev\openfec\openfec_v1.4.2\src\lib_common\linear_binary_codes_utils\ml_decoding\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ACA9225D-7E95-3EA3-B9E0-6DFB6C6180E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3B508F7B-45A9-3C8E-97EB-BAD32816D95C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
