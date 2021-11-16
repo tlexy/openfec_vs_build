@@ -77,6 +77,11 @@ static void	dump_buffer_32 (void	*buf,
 int
 main (int argc, char* argv[])
 {
+#if defined(_WIN32)
+	WSADATA wsa;
+	WSAStartup(MAKEWORD(2, 2), &wsa);
+#endif
+
 	of_codec_id_t	codec_id;				/* identifier of the codec to use */
 	of_session_t	*ses 		= NULL;			/* openfec codec instance identifier */
 	of_parameters_t	*params		= NULL;			/* structure used to initialize the openfec session */
@@ -106,8 +111,7 @@ main (int argc, char* argv[])
 		ret = -1;
 		goto end;
 	}
-	//首先接收编解码器信息（结构体）
-	len = sizeof(fec_oti_t);		/* size of the expected packet */
+	len = sizeof(fec_oti_t);		/* size of the expected packet *///首先接收编解码器信息（结构体）kkkk
 	if ((ret = get_next_pkt(so, (void**)&fec_oti, &len)) != OF_STATUS_OK)
 	{
 		OF_PRINT_ERROR(("get_next_pkt failed (FEC OTI reception)\n"))
@@ -188,6 +192,7 @@ main (int argc, char* argv[])
 		goto end;
 	}
 	//设置参数
+	/*settings*/
 	if (of_set_fec_parameters(ses, params) != OF_STATUS_OK)
 	{
 		OF_PRINT_ERROR(("of_set_fec_parameters() failed for codec_id %d\n", codec_id))
@@ -316,7 +321,11 @@ end:
 	/* Cleanup everything... */
 	if (so!= INVALID_SOCKET)
 	{
+#ifdef _WIN32
+		closesocket(so);
+#else
 		close(so);
+#endif
 	}
 	if (ses)
 	{
@@ -349,6 +358,11 @@ end:
 		free(recvd_symbols_tab);
 		free(src_symbols_tab);
 	}
+
+#if defined(_WIN32)
+	WSACleanup();
+#endif
+
 	return ret;
 }
 
@@ -396,6 +410,11 @@ get_next_pkt   (SOCKET		so,
 	static bool	first_call = true;
 	INT32		saved_len = *len;	/* save it, in case we need to do several calls to recvfrom */
 
+	printf("save len: %d", saved_len);
+	if (saved_len < 1)
+	{
+		printf("error: %d", 223);
+	}
 	if ((*pkt = malloc(saved_len)) == NULL)
 	{
 		OF_PRINT_ERROR(("no memory (malloc failed for p)\n"))

@@ -49,6 +49,7 @@
  */
 void 	of_galois_field_2_8_addmul1(gf *dst1, gf *src1, gf c, int sz) {
 	USE_GF_MULC ;
+	//printf("%s\n", "of_galois_field_2_8_addmul1");
 	register gf *dst = dst1, *src = src1 ;
 	gf *lim = &dst[sz - UNROLL + 1] ;
 #if ((defined (__LP64__) || (__WORDSIZE == 64)) && !defined (OF_RS_2M_USE_32BITS))	

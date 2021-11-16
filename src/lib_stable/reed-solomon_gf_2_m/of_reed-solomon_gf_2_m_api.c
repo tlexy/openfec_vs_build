@@ -263,13 +263,14 @@ of_status_t	of_rs_2_m_set_available_symbols    (of_rs_2_m_cb_t*	ofcb,
 }
 
 
-#if 0		/* new */
+#if 1		/* new */
 of_status_t	of_rs_2_m_finish_decoding (of_rs_2_m_cb_t*	ofcb)
 {
 	UINT32 		k;
 	UINT32 		n;
-	char		*tmp_buf[ofcb->nb_source_symbols];/* keep available source/repair symbol buffers here... */
-	int		tmp_esi[ofcb->nb_source_symbols]; /* ...and their esi here. In fact we only need k entries
+	//char		*tmp_buf[ofcb->nb_source_symbols];/* keep available source/repair symbol buffers here... */
+	//int		tmp_esi[ofcb->nb_source_symbols]; 
+	/* ...and their esi here. In fact we only need k entries
 						 * in these tables, but in order to avoid using malloc (time
 						 * consumming), we use an automatic table of maximum size for
 						 * both tmp_buf[] and tmp_esi[]. */
@@ -299,6 +300,9 @@ of_status_t	of_rs_2_m_finish_decoding (of_rs_2_m_cb_t*	ofcb)
 		OF_EXIT_FUNCTION
 		return OF_STATUS_OK;
 	}
+	int achar = sizeof(char*);
+	char** tmp_buf = (char**)malloc(sizeof(char*) * ofcb->nb_source_symbols);//ofcb->nb_source_symbols/* keep available source/repair symbol buffers here... */
+	int* tmp_esi = (int*)malloc(sizeof(int) * ofcb->nb_source_symbols); //ofcb->nb_source_symbols
 	/*
 	 * Because of of_rs_decode internal details, we put source symbols at their right location
 	 * and fill in the gaps (i.e. erased source symbols) with repair symbols.
@@ -361,10 +365,14 @@ of_status_t	of_rs_2_m_finish_decoding (of_rs_2_m_cb_t*	ofcb)
 	}
 //#endif
 	OF_EXIT_FUNCTION
+	free(tmp_buf);
+	free(tmp_esi);
 	return OF_STATUS_OK;
 
 error:
 	OF_EXIT_FUNCTION
+	free(tmp_buf);
+	free(tmp_esi);
 	return OF_STATUS_ERROR;
 }
 
