@@ -64,7 +64,8 @@
 #define SOCKADDR_IN	struct sockaddr_in
 #define INVALID_SOCKET	(-1)
 #define SOCKET_ERROR	(-1)
-#define closesocket	close
+
+//#define closesocket	close
 #ifdef _WIN32
 #define SLEEP(t)	Sleep(t*1000)
 #else

@@ -263,7 +263,7 @@ of_status_t	of_rs_2_m_set_available_symbols    (of_rs_2_m_cb_t*	ofcb,
 }
 
 
-#if 1		/* new */
+#if 0		/* new */
 of_status_t	of_rs_2_m_finish_decoding (of_rs_2_m_cb_t*	ofcb)
 {
 	UINT32 		k;
@@ -433,7 +433,7 @@ of_status_t	of_rs_2_m_finish_decoding (of_rs_2_m_cb_t*	ofcb)
 		goto no_mem;
 	}
 
-	char* tmp_buf = (char*)malloc(sizeof(char) * ofcb->nb_source_symbols);//ofcb->nb_source_symbols/* keep available source/repair symbol buffers here... */
+	char** tmp_buf = (char**)malloc(sizeof(char*) * ofcb->nb_source_symbols);//ofcb->nb_source_symbols/* keep available source/repair symbol buffers here... */
 	int* tmp_esi = (int*)malloc(sizeof(int)* ofcb->nb_source_symbols) ; //ofcb->nb_source_symbols
 	if (tmp_buf == NULL || tmp_esi == NULL)
 	{
