@@ -303,7 +303,7 @@ main(int argc, char* argv[])
 		/* Perform a short usleep() to slow down transmissions and avoid UDP socket saturation at the receiver.
 		 * Note that the true solution consists in adding some rate control mechanism here, like a leaky or token bucket. */
 #ifdef _WIN32
-		Sleep(500);
+		Sleep(1);
 #else 
 		usleep(500);
 #endif

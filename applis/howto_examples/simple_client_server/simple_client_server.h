@@ -41,17 +41,17 @@
 #include <ctype.h>
 #include <sys/types.h>
 #include <stdint.h>
-#ifdef UNIX
+#ifdef _WIN32
+#include <ws2tcpip.h>
+#include <winsock2.h>
 
+#else 
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <sys/time.h>	/* for gettimeofday */
-#else 
-//#include <windows.h>
-#include <ws2tcpip.h>
-#include <winsock2.h>
+
 #endif
 
 #include "../../../src/lib_common/of_openfec_api.h"
