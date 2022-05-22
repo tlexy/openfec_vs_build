@@ -434,11 +434,13 @@ get_next_pkt   (SOCKET		so,
 			return OF_STATUS_ERROR;
 		}
 		/* set the non blocking mode for this socket now that the flow has been launched */
-		/*if (fcntl(so, F_SETFL, O_NONBLOCK) < 0)
+#ifndef _WIN32
+		if (fcntl(so, F_SETFL, O_NONBLOCK) < 0)
 		{
 			OF_PRINT_ERROR(("ERROR, fcntl failed to set non blocking mode\n"))
 			exit(-1);
-		}*/
+		}
+#endif
 		if (VERBOSITY > 1)
 			printf("%s: pkt received 0, len=%u\n", __FUNCTION__, *len);
 		return OF_STATUS_OK;
